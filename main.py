@@ -1,4 +1,5 @@
 import first_exercise.first_exercise as first
+import second_exercise.second_exercise as second
 
 
 def main() -> None:
@@ -16,6 +17,8 @@ def main() -> None:
             break
         elif choice == 1:
             first.first_exercise_main()
+        elif choice == 2:
+            second.second_exercise_main()
 
 
 def print_main_menu() -> None:
