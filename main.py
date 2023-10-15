@@ -1,25 +1,29 @@
-import first_exercise as first
+import first_exercise.first_exercise as first
 
 
 def main() -> None:
-    main_menu()
-    choice = 0
     while True:
-        try:
-            choice = int(input("Ввод: "))
+        print_main_menu()
+        choice = 0
+        while True:
+            try:
+                choice = int(input("Ввод: "))
+                break
+            except (TypeError, ValueError):
+                print("Неверный ввод, повторите попытку:", end=" ")
+                continue
+        if choice == 0:
             break
-        except (TypeError, ValueError):
-            print("Неверный ввод, повторите попытку:", end=" ")
-            continue
-    if choice == 0:
-        return
-    if choice == 1:
-        first.first_exercise_main()
+        elif choice == 1:
+            first.first_exercise_main()
 
 
-def main_menu() -> None:
+def print_main_menu() -> None:
     print("Главное меню:\n"
           "1. Копирование содержимого файлов\n"
           "2. Считывание файла и замена вывода\n"
           "3. Учебные предметы\n"
           "0. Выход\n")
+
+
+main()
