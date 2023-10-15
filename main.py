@@ -1,3 +1,5 @@
+import first_exercise as first
+
 
 def main() -> None:
     main_menu()
@@ -11,6 +13,8 @@ def main() -> None:
             continue
     if choice == 0:
         return
+    if choice == 1:
+        first.first_exercise_main()
 
 
 def main_menu() -> None:
