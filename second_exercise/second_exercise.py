@@ -1,7 +1,10 @@
+
 def second_exercise_main() -> None:
+    print("\nЗадание 2:")
     initial_list_of_strings = read_from_file()
     russian_list_of_strings = translate_list(initial_list_of_strings)
     write_to_file(russian_list_of_strings)
+    print("Выполнено успешно.")
 
 
 def read_from_file() -> list:

@@ -1,8 +1,9 @@
 
 def first_exercise_main() -> None:
-    print("\nЗадание 1:\n")
+    print("\nЗадание 1:")
     write_file()
     copy_one_file_to_another()
+    print("Выполнено успешно.")
 
 
 def write_file() -> None:
